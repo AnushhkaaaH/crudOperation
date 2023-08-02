@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="header">
+        <h5>Team Members</h5>
+        
+    </div>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError">This
+                                field is required.</label>
+                            <input type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                            <label>Company</label>
+                            <input type="text" name="company" id="company">
+                        </div>
+                        <div>
+                            <label>Status</label>
+                            <input type="text" name="status" id="status">
+                        </div>
+                        <div>
+                            <label>Last Updated</label>
+                            <input type="text" name="updates" id="updates">
+                        </div>
+                        <div>
+                            <label>Notes</label>
+                            <input type="text" name="notes" id="notes">
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+            </td>
+            
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Last Updates</th>
+                            <th>Notes</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
